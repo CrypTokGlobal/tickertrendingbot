@@ -1,0 +1,280 @@
+2025-04-19 05:33:05,361 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:33:05,362 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:33:05,975 - dashboard - INFO - Starting dashboard server on port 8080
+2025-04-19 05:33:05,975 - dashboard - INFO - 📊 Dashboard will be available at: https://workspace.arasbaker99.repl.co
+2025-04-19 05:33:05,975 - dashboard - INFO - 📊 Direct status URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:33:05,976 - dashboard - INFO - ✅ Dashboard started in background thread on port 8080
+2025-04-19 05:33:05,977 - dashboard - INFO - ✅ Access URL: https://workspace.arasbaker99.repl.co
+2025-04-19 05:33:05,977 - __main__ - INFO - 🔧 Building bot application...
+Exception in thread Thread-1 (run_server):
+Traceback (most recent call last):
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/runner/workspace/dashboard.py", line 487, in run_server
+    uvicorn.run(
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/uvicorn/main.py", line 580, in run
+    server.run()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/uvicorn/server.py", line 66, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 27, in run
+    loop = asyncio.get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 41, in _get_event_loop
+    loop = events.get_event_loop_policy().get_event_loop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/events.py", line 681, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1 (run_server)'.
+/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/threading.py:1047: RuntimeWarning: coroutine 'Server.serve' was never awaited
+  self._invoke_excepthook(self)
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+2025-04-19 05:33:06,027 - error_handler - INFO - Error handler registered
+2025-04-19 05:33:06,029 - __main__ - ERROR - Error in main: cannot import name 'get_instance' from 'bsc_monitor' (/home/runner/workspace/bsc_monitor.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 271, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 177, in main
+    from track_handler import setup_track_handlers
+  File "/home/runner/workspace/track_handler.py", line 19, in <module>
+    from bsc_monitor import get_instance as get_bnb_instance
+ImportError: cannot import name 'get_instance' from 'bsc_monitor' (/home/runner/workspace/bsc_monitor.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+🌐 Starting uvicorn server on http://0.0.0.0:8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+❌ Error in main: cannot import name 'get_instance' from 'bsc_monitor' (/home/runner/workspace/bsc_monitor.py)
+2025-04-19 05:42:31,713 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:42:31,714 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:42:32,330 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:42:32,396 - error_handler - INFO - Error handler registered
+2025-04-19 05:42:32,505 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:42:32,511 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:42:32,511 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:42:32,511 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:42:32,511 - __main__ - ERROR - Main crash: cannot import name 'BSC_NODE_URL' from 'config' (/home/runner/workspace/config.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 101, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 31, in main
+    from track_handler import setup_track_handlers
+  File "/home/runner/workspace/track_handler.py", line 30, in <module>
+    bnb_monitor = get_bnb_instance()
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 503, in get_instance
+    return BNBMonitor.get_instance(bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 22, in get_instance
+    cls._instance = cls(bot)
+                    ^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 33, in __init__
+    from config import BSC_NODE_URL, BSCSCAN_API_KEY
+ImportError: cannot import name 'BSC_NODE_URL' from 'config' (/home/runner/workspace/config.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:42:46,345 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:42:46,346 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:42:47,143 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:42:47,253 - error_handler - INFO - Error handler registered
+2025-04-19 05:42:47,371 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:42:47,371 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:42:47,371 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:42:47,371 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:42:47,371 - __main__ - ERROR - Main crash: cannot import name 'BSC_NODE_URL' from 'config' (/home/runner/workspace/config.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 101, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 31, in main
+    from track_handler import setup_track_handlers
+  File "/home/runner/workspace/track_handler.py", line 30, in <module>
+    bnb_monitor = get_bnb_instance()
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 503, in get_instance
+    return BNBMonitor.get_instance(bot)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 22, in get_instance
+    cls._instance = cls(bot)
+                    ^^^^^^^^
+  File "/home/runner/workspace/bsc_monitor.py", line 33, in __init__
+    from config import BSC_NODE_URL, BSCSCAN_API_KEY
+ImportError: cannot import name 'BSC_NODE_URL' from 'config' (/home/runner/workspace/config.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:46:49,184 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:46:49,184 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:46:49,731 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:46:49,792 - error_handler - INFO - Error handler registered
+2025-04-19 05:46:49,897 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:46:49,897 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:46:49,897 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:46:49,897 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:46:49,897 - bsc_monitor - INFO - Attempting to connect to BSC provider
+2025-04-19 05:46:49,986 - bsc_monitor - INFO - Connected to BSC network - latest block: 48486473
+2025-04-19 05:46:49,987 - __main__ - ERROR - Main crash: name 'handle_unttrack_callback' is not defined
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 104, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 35, in main
+    for handler in get_track_handlers():
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/track_handler.py", line 763, in get_track_handlers
+    get_track_handler(),
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/track_handler.py", line 752, in get_track_handler
+    CallbackQueryHandler(handle_unttrack_callback, pattern=r"^untrack_")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'handle_unttrack_callback' is not defined
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:48:12,266 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:48:12,267 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:48:13,087 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:48:13,167 - error_handler - INFO - Error handler registered
+2025-04-19 05:48:13,281 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:48:13,281 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:48:13,281 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:48:13,282 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:48:13,282 - bsc_monitor - INFO - Attempting to connect to BSC provider
+2025-04-19 05:48:13,371 - bsc_monitor - INFO - Connected to BSC network - latest block: 48486501
+/home/runner/workspace/track_handler.py:688: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  return ConversationHandler(
+2025-04-19 05:48:13,374 - __main__ - ERROR - Main crash: cannot import name 'test_alert_command' from 'start_bot' (/home/runner/workspace/start_bot.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 104, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 41, in main
+    from start_bot import test_alert_command, register_chat_command
+ImportError: cannot import name 'test_alert_command' from 'start_bot' (/home/runner/workspace/start_bot.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:49:34,593 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:49:34,593 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:49:35,188 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:49:35,257 - error_handler - INFO - Error handler registered
+2025-04-19 05:49:35,358 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:49:35,358 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:49:35,358 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:49:35,358 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:49:35,359 - bsc_monitor - INFO - Attempting to connect to BSC provider
+2025-04-19 05:49:35,441 - bsc_monitor - INFO - Connected to BSC network - latest block: 48486528
+/home/runner/workspace/track_handler.py:688: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  return ConversationHandler(
+2025-04-19 05:49:35,450 - __main__ - ERROR - Main crash: cannot import name 'handle_help_callback' from 'callback_handler' (/home/runner/workspace/callback_handler.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 135, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 84, in main
+    from callback_manager import register_all_callbacks
+  File "/home/runner/workspace/callback_manager.py", line 6, in <module>
+    from callback_handler import handle_help_callback, handle_track_callback, handle_main_menu_callback
+ImportError: cannot import name 'handle_help_callback' from 'callback_handler' (/home/runner/workspace/callback_handler.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status
+2025-04-19 05:52:05,413 - config - INFO - Bot token found: ✅ Yes
+2025-04-19 05:52:05,413 - config - INFO - ✅ Configuration validated successfully
+2025-04-19 05:52:06,081 - __main__ - INFO - 🔧 Building bot application...
+2025-04-19 05:52:06,174 - error_handler - INFO - Error handler registered
+2025-04-19 05:52:06,285 - eth_monitor - INFO - ✅ Connected to Ethereum via Infura
+2025-04-19 05:52:06,285 - eth_monitor - INFO - 📋 Loaded 5 ETH tokens from data manager
+2025-04-19 05:52:06,285 - eth_monitor - INFO - 📋 Tracked contracts: ['0x1f9840a85d5af5bf1d1762f925bdaddc4201f984', '0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c']
+2025-04-19 05:52:06,286 - bsc_monitor - INFO - BNB Monitor initialized
+2025-04-19 05:52:06,286 - bsc_monitor - INFO - Attempting to connect to BSC provider
+2025-04-19 05:52:06,369 - bsc_monitor - INFO - Connected to BSC network - latest block: 48486579
+/home/runner/workspace/track_handler.py:688: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  return ConversationHandler(
+2025-04-19 05:52:06,373 - __main__ - ERROR - Main crash: cannot import name 'handle_how_boost_works_callback' from 'boost_menu' (/home/runner/workspace/boost_menu.py)
+Traceback (most recent call last):
+  File "/home/runner/workspace/main.py", line 135, in <module>
+    asyncio.run(main())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 31, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 99, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/main.py", line 84, in main
+    from callback_manager import register_all_callbacks
+  File "/home/runner/workspace/callback_manager.py", line 7, in <module>
+    from boost_menu import handle_boost_selection, handle_how_boost_works_callback
+ImportError: cannot import name 'handle_how_boost_works_callback' from 'boost_menu' (/home/runner/workspace/boost_menu.py)
+🚀 Starting Telegram bot
+📊 Starting dashboard server on port 8080
+📊 Dashboard URL: https://workspace.arasbaker99.repl.co/status

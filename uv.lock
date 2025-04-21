@@ -1,0 +1,13 @@
+
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "python-template"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "python-telegram-bot"
+version = "22.0"
+source = { registry = "https://pypi.org/simple" }

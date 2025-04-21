@@ -1,0 +1,14 @@
+
+{
+  "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+    "name": "UNISWAP",
+    "symbol": "UNI",
+    "image": "https://media-hosting.imagekit.io/1efc77a9d9c94999/4d28058e-6e07-4f7e-9ce3-186ea2a52c72.webp?Expires=1839397835&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=bBwmy-qUP-B2IXtdoZLWgm2UhE8UIc~JTQgKd3z6sGSvtNnhS5yDftawZgFIOJ6-m3Q8uL8bAB7mByvny~29KBRvnNdexBjf4CPdMuzYxzO1iniR6rXWRYR1viccdk3TCZnJ2ef7hiwyGNpwI1YGaNMQYgZ~0iLsajxm-2WEBHCnJUO0xmrmbBAG~vgbM9wl3okIMO0akGpUwOILop1cdJj38ALBYfXPbKB2h3DCeHcG4GwegSUQyZBECVqDKZjBwpkp6iXuJoRs449n~J~p8SiynBScchGCpxc~e7wqCL3VHTnRQSmr0xuVV0yLz3c7d0etqG8wQsdtUdIk3EPxPA__",
+    "emojis": "💎💎💎",
+    "links": {
+      "telegram": "https://t.me/uniswap",
+      "website": "https://uniswap.org",
+      "twitter": "https://twitter.com/Uniswap"
+    }
+  }
+}

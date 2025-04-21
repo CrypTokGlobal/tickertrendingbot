@@ -1,0 +1,20 @@
+
+{
+  "solana": {
+    "3h": {"price": 0.40, "label": "🕒 3 Hours - Quick Boost", "hours": 3},
+    "6h": {"price": 0.75, "label": "⏱ 6 Hours - Medium Boost", "hours": 6},
+    "12h": {"price": 1.00, "label": "🌗 12 Hours - Half Day", "hours": 12},
+    "24h": {"price": 2.00, "label": "📆 24 Hours - Full Day", "hours": 24},
+    "48h": {"price": 3.00, "label": "🚀 48 Hours - Extended", "hours": 48}
+  },
+  "ethereum": {
+    "1h": {"price": 0.05, "label": "⏰ 1 Hour - Quick Boost", "hours": 1},
+    "6h": {"price": 0.12, "label": "⌛ 6 Hours - Medium Boost", "hours": 6},
+    "24h": {"price": 0.25, "label": "🗓 24 Hours - Full Day", "hours": 24},
+    "48h": {"price": 0.35, "label": "🧨 48 Hours - Extended", "hours": 48}
+  },
+  "wallet_addresses": {
+    "solana": "DbqdUJmaPgLKkCEhebokxGTuXhzoS7D2SuWxhahi8BYn",
+    "ethereum": "0x247cd53A34b1746C11944851247D7Dd802C1d703"
+  }
+}

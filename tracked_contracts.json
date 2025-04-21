@@ -1,0 +1,25 @@
+{
+  "-1002520194744": [
+    {
+      "address": "0x42069e1234abcde0000000000000000000000420",
+      "name": "Pepecoin",
+      "symbol": "PEPE",
+      "min_usd": 0,
+      "network": "ethereum"
+    },
+    {
+      "address": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+      "name": "SPX",
+      "symbol": "SPX",
+      "min_usd": 0,
+      "network": "ethereum"
+    },
+    {
+      "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "min_usd": 5.0,
+      "network": "ethereum"
+    }
+  ]
+}

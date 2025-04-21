@@ -1,0 +1,81 @@
+{
+  "tracked_tokens": [
+    {
+      "chat_id": "2032406459",
+      "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "name": "UNISWAP",
+      "symbol": "UNI",
+      "min_volume_usd": 100.0,
+      "network": "ethereum",
+      "added_at": "2025-04-16T07:23:03.336792"
+    },
+    {
+      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "name": "ETH",
+      "symbol": "TEST",
+      "min_volume_usd": 1.0,
+      "network": "ethereum",
+      "added_at": "2025-04-16T09:04:24.297461"
+    },
+    {
+      "address": "dezxaz8z7pnrnrjjz3wxborgixca6xjnb7yab1ppb263",
+      "name": "bonk",
+      "symbol": "BONK",
+      "min_volume_usd": 1.0,
+      "network": "solana",
+      "added_at": "2025-04-16T09:10:25.466135"
+    },
+    {
+      "address": "0x3593d125a4f7849a1b059e64f4517a86dd60c95d",
+      "name": "OM",
+      "symbol": "OM",
+      "min_volume_usd": 1.0,
+      "network": "ethereum",
+      "added_at": "2025-04-16T21:45:09.033015"
+    },
+    {
+      "address": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+      "name": "SPX",
+      "symbol": "SPX",
+      "chat_id": -1002520194744,
+      "min_volume_usd": 0.0,
+      "network": "ethereum",
+      "added_at": "2025-04-19T03:43:06.928449"
+    },
+    {
+      "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+      "name": "Uniswap Token",
+      "symbol": "UNI",
+      "chat_id": -1002520194744,
+      "min_volume_usd": 1.0,
+      "network": "ethereum",
+      "added_at": "2025-04-19T03:51:19.383590"
+    },
+    {
+      "address": "0xaddf205a24c13e2dd3685bff238b2124e17f0613",
+      "name": "XO",
+      "symbol": "XO",
+      "min_volume_usd": 10.0,
+      "chain": "ethereum",
+      "chat_id": -1002520194744,
+      "added_at": "2025-04-19 07:30:23"
+    }
+  ],
+  "groups": {
+    "-1002520194744": {
+      "name": "ALPHA QUEEN || \u963f\u5c14\u6cd5\u5973\u738b - @CoinSeducers and Rose",
+      "is_admin": true,
+      "registered_at": "2025-04-16T21:50:07.512238",
+      "last_activity": "2025-04-17T01:36:46.541943",
+      "active": true
+    }
+  },
+  "chat_settings": {
+    "-1002520194744": {
+      "registered_at": "2025-04-16T21:50:07.512310",
+      "active": true,
+      "chat_title": "ALPHA QUEEN || \u963f\u5c14\u6cd5\u5973\u738b - @CoinSeducers and Rose",
+      "bot_is_admin": true
+    }
+  }
+}
